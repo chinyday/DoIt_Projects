@@ -101,6 +101,13 @@ body{
 }
 
 /* item2 */
-.wrap #container article.item1{
+.wrap #container article.item2{
   display: block;
+}
+.wrap #container article.item2 .inner img{
+  width: 100%;
+  margin: 20px 0 25px;
+}
+.wrap #container article.item2 .inner h3{
+  margin-bottom: 15px;
 }
