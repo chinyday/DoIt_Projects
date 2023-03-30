@@ -88,7 +88,6 @@ body{
 .wrap #container article.item1 .inner > div:nth-child(2n-1){
   margin-right: 20px;
 }
-
 .wrap #container article.item1 .inner > div p i{
   font-size: 50px;
   transition: all 0.5s;
@@ -101,13 +100,51 @@ body{
 }
 
 /* item2 */
-.wrap #container article.item2{
-  display: block;
-}
 .wrap #container article.item2 .inner img{
   width: 100%;
   margin: 20px 0 25px;
 }
 .wrap #container article.item2 .inner h3{
+  color: #fff;
   margin-bottom: 15px;
+}
+
+/* item3 */
+.wrap #container article.item3 .inner > div{
+  height: 170px;
+  margin-bottom: 20px;
+}
+.wrap #container article.item3 .inner .memberImg{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+}
+.wrap #container article.item3 .inner .memberImg img{
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 80px;
+  height: 100px;
+}
+.wrap #container article.item3 .inner .memberInfo{
+  margin-left: 100px;
+}
+.wrap #container article.item3 .inner .memberInfo h2{
+  color: #fff;
+  margin: -10px 0 10px 0;
+}
+.wrap #container article.item3 .inner .memberInfo span{
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+  color: aqua;
+  opacity: 0.5;
+}
+
+/* item4 */
+.wrap #container article.item4{
+  display: block;
 }
