@@ -171,9 +171,6 @@ body{
 }
 
 /* item5 */
-.wrap #container article.item5{
-  display: block;
-}
 .wrap #container article.item5 .inner .title{
   width: 40%;
 }
@@ -200,4 +197,37 @@ body{
 }
 .wrap #container article.item5:hover .inner .reflect{
   top: -40%;
+}
+
+/* item6 */
+.wrap #container article.item6{
+  display: block;
+}
+.wrap #container article.item6 .inner > div{
+  height: 122px;
+  margin-bottom: 20px;
+}
+.wrap #container article.item6 .inner ul::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.wrap #container article.item6 .inner ul{
+  margin-top: -15px;
+}
+.wrap #container article.item6 .inner ul li{
+  float: left;
+}
+.wrap #container article.item6 .inner ul li i{
+  font-size: 30px;
+  padding: 10px 20px 10px 0;
+  margin-right: 20px;
+  color: #fff;
+  border-right: 1px solid #ddd;
+}
+.wrap #container article.item6 .inner ul li:last-child{
+  margin-top: 5px;
+}
+.wrap #container article.item6 .inner ul li p{
+  margin-top: 10px;
 }
