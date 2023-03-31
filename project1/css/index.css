@@ -200,9 +200,6 @@ body{
 }
 
 /* item6 */
-.wrap #container article.item6{
-  display: block;
-}
 .wrap #container article.item6 .inner > div{
   height: 122px;
   margin-bottom: 20px;
@@ -230,4 +227,44 @@ body{
 }
 .wrap #container article.item6 .inner ul li p{
   margin-top: 10px;
+}
+
+/* item7 */
+.wrap #container article.item7{
+  display: block;
+}
+.wrap #container article.item7 .inner > div > div{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+.wrap #container article.item7 .inner video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.wrap #container article.item7 .inner .title{
+  position: absolute;
+  top: 67px;
+  left: 30px;
+  font-size: 23px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 5px #555;
+  z-index: 2;
+}
+.wrap #container article.item7 .inner .line{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+}
+.wrap #container article.item7 .inner .txt{
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: 58%;
 }
