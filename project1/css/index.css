@@ -145,9 +145,6 @@ body{
 }
 
 /* item4 */
-.wrap #container article.item4{
-  display: block;
-}
 .wrap #container article.item4 .inner > div{
   float: left;
   margin-bottom: 20px;
@@ -171,4 +168,36 @@ body{
   float: right;
   font-size: 10px;
   color: #ccc;
+}
+
+/* item5 */
+.wrap #container article.item5{
+  display: block;
+}
+.wrap #container article.item5 .inner .title{
+  width: 40%;
+}
+.wrap #container article.item5 .inner .mainImg{
+  width: 100%;
+  margin: 20px 0;
+}
+.wrap #container article.item5 .inner .subTitle{
+  width: 90%;
+}
+.wrap #container article.item5 .inner button{
+  text-align: left;
+  margin-top: 30px;
+}
+.wrap #container article.item5 .inner button img{
+  width: 60%;
+}
+.wrap #container article.item5 .inner .reflect{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: all 0.5s;
+  width: 80%;
+}
+.wrap #container article.item5:hover .inner .reflect{
+  top: -40%;
 }
