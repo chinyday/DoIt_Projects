@@ -1,0 +1,210 @@
+body {
+  background: #efefef;
+}
+
+header {
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(45deg, aqua, royalblue);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+header h1 {
+  letter-spacing: 1px;
+  position: absolute;
+  top: 20%;
+  left: 50px;
+  transform: translateY(-150%);
+}
+header h1::before {
+  content: "UI/UX DEVELOPMENT";
+  display: block;
+  color: #fff;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0.8;
+  font-size: 10px;
+}
+header h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: #fff;
+  margin-top: 20px;
+}
+header ul {
+  display: flex;
+  position: absolute;
+  left: 50px;
+  bottom: 10%;
+  justify-content: space-between;
+  width: 65%;
+  font-size: 15px;
+}
+header ul li i {
+  margin-right: 5px;
+}
+header ul li span {
+  display: inline-block;
+  font-weight: bold;
+  font-variant: petite-caps;
+  transform: scale(0.7) translateX(-10px);
+}
+
+main {
+  margin-left: 400px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+main .nav li {
+  width: 100px;
+  height: 26px;
+  margin-right: 12px;
+}
+main .nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #aaa;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+main .nav li.on a {
+  background: linear-gradient(45deg, #67faf3, #58abf8);
+  box-shadow: 0px 5px 20px rgba(0, 255, 255, 0.527);
+  color: #fff;
+}
+
+main section {
+  width: 100%;
+}
+main section::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+main section article {
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  padding: 12px;
+}
+main section article div {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 15px;
+}
+main section article div img {
+  width: 100%;
+}
+main section article div h2 {
+  margin: 15px 0 4px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #444;
+}
+main section article div p {
+  color: #777;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1599px) {
+  /* 1600 아래 */
+  header {
+    width: 350px;
+  }
+  main {
+    margin-left: 350px;
+  }
+  main section article {
+    width: 25%;
+  }
+  header ul {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* 1200 아래 */
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+  header h1 {
+    transform: translateY(100%);
+  }
+  header h1::before,
+  header h1::after {
+    display: none;
+  }
+  header ul {
+    width: auto;
+    right: 50px;
+    bottom: 40%;
+    justify-content: flex-end;
+  }
+  header ul li i {
+    margin: 0 10px;
+  }
+  header ul li span {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+  main section article {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 899px) {
+  /* 900 아래 */
+  main section article {
+    width: 33.3%;
+  }
+}
+@media screen and (max-width: 679px) {
+  /* 680 아래 */
+  main section article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 539px) {
+  /* 540 아래 */
+  header ul {
+    display: none;
+  }
+  main section article {
+    width: 100%;
+  }
+  main .nav {
+    justify-content: space-evenly;
+  }
+  main .nav li {
+    margin-right: 0;
+  }
+}
